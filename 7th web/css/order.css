@@ -1,0 +1,215 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    width: auto;
+    margin: auto;
+}
+
+.body-dark {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+a {
+    color: rgb(150, 148, 148);
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 55px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: white;
+    box-shadow: 0 20px 20px #bebebe;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+.main-nav {
+    width: auto;
+    display: flex;
+    column-gap: 40px;
+    z-index: 1;
+}
+
+.main-nav a {
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.main-nav a:hover {
+    cursor: pointer;
+    color: blue;
+    transition-duration: 0.5s;
+}
+
+.main-nav .order button {
+    color: blue;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.main-nav .order button:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    transition-duration: 0.5s;
+    box-shadow: 0 8px 15px #575656;
+}
+
+.navi a{
+    transition-duration: 0.3s;
+}
+
+.navi a:hover {
+    /*border: solid 1px teal;*/
+    /*padding: 30px 20px;*/
+    transition-duration: 0.3s;
+}
+
+.order {
+    background-color: white;
+}
+
+/********************light & dark mode*********************/
+#sun-icon {
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+#moon-icon {
+    padding-bottom: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.under-img {
+    width: 100%;
+    filter: brightness(-50px);
+}
+
+.order-form {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    align-items: center;
+    margin: 5% 20%;
+    gap: 50px;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 40px black;
+    animation: slide-color 1.5s;
+ /* 
+    bottom: 50%;
+    margin: auto;
+    margin-top: 150px; 
+    border: none;
+    font-size: 18px; */
+}
+
+.order-form select {
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.order-form input {
+    margin-bottom: 20px;
+    padding: 8px 0;
+    font-size: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(243, 239, 239);
+    outline: none;
+    
+}
+
+.order-form button {
+    border: none;
+    background-color: goldenrod;
+    color: blue;
+    width: fit-content;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px;
+    transition-duration: 0.5s;
+}
+
+@keyframes slide-color {
+    0%{transform: translateY(-350px); opacity: 0%;}
+    100%{transform: translateY(0%); opacity: 100%;}
+}
+
+.order-form button:hover {
+    cursor: pointer;
+    background-color: rgb(231, 179, 48); 
+    color: white;
+    transition-duration: 0.5s;
+    box-shadow: 0 8px 19px #575656;
+}
+
+
+
+/************************register popup***************************/
+.popup {
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    box-shadow: 0 2px 5px gray;
+}
+
+.open-popup {
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    transition: 200ms ease-in-out;
+}
+
+.popup img {
+    position: relative;
+    width: 130px;
+    margin-top: -50px;
+    margin-left: -2%;
+    border-radius: 50%;
+   /* box-shadow: 0 5px 10px gray */
+}
+
+.popup button[type="button"] {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    background-color: rgb(61, 163, 61);
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px gray
+}
+
+.popup button:hover {
+    filter: contrast(125%);
+}

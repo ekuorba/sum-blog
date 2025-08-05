@@ -1,0 +1,248 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    width: auto;
+    margin: auto;
+}
+
+.body-dark {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+a {
+    color: rgb(150, 148, 148);
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 55px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 20px 20px #bebebe;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+.main-nav {
+    width: auto;
+    display: flex;
+    column-gap: 40px;
+    z-index: 1;
+}
+
+.main-nav a {
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.main-nav a:hover {
+    cursor: pointer;
+    color: blue;
+    transition-duration: 0.5s;
+}
+
+.main-nav button {
+    color: blue;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 8px;
+    margin: 5px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+.main-nav .order button:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    transition-duration: 0.5s;
+    box-shadow: 0 8px 15px #575656;
+}
+
+.navi a{
+    transition-duration: 0.3s;
+}
+
+.navi a:hover {
+    /*border: solid 1px teal;*/
+    /*padding: 30px 20px;*/
+    transition-duration: 0.3s;
+}
+
+.order {
+    background-color: white;
+}
+
+/********************light & dark mode*********************/
+#sun-icon {
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+#moon-icon {
+    padding-bottom: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.description {
+    position: absolute;
+    z-index: 1;
+    width: 800px;
+    margin: 0 30px ;
+}
+
+.description h1 {
+    text-underline-position: auto;
+}
+
+.description {
+    animation: slide-right 3s;
+}
+
+.description p{
+    color: blue;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: goldenrod;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px 20px;
+    animation: slide-right 1s;
+    z-index: 15;
+    transition-duration: 0.8s;
+}
+
+.description p:hover {
+    cursor: pointer;
+    box-shadow: 0 20px 20px #575656;
+    transition-duration: 0.8s;
+    background-color: goldenrod;
+    color: white;
+}
+
+.back-img img {
+    animation: slide-right 2s;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 40px; 
+    text-decoration-line: overline; 
+    text-decoration-color: goldenrod; 
+    text-decoration-thickness: 5px; 
+    width: 1200px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: auto;
+}
+
+.product-card {
+    margin: auto;
+    width: 200px;
+    border-radius: 20px 20px;
+    background-color: goldenrod;
+}
+
+.product-card a {
+    color: blue;
+    transition-duration: 0.3s;
+    font-weight: 500;
+}
+
+.product-card a:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+    transition-duration: 0.3s;
+}
+
+.product-img, .product-img-one, .product-img-two, .product-img-three:hover {
+    cursor: pointer;
+}
+.review {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 1;
+    margin: 175px 0 0 10px;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.review-new {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 1;
+    margin: 175px 0 0 10px;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.review-new1 {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 1;
+    margin: 175px 0 0 10px;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.review-new2 {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 1;
+    margin: 175px 0 0 10px;
+    opacity: 0%;
+    transition-duration: 0.5s;
+}
+
+.product-img-one {
+    border: none;
+    border-radius: 20px 20px 0 0;
+    width: 200px;
+}
+
+.product-img-two {
+    border: none;
+    border-radius: 20px 20px 0 0;
+    width: 200px;
+}
+
+.product-img-three {
+    border: none;
+    border-radius: 20px 20px 0 0;
+    width: 200px;
+}
+
+.product-img {
+    border: none;
+    border-radius: 20px 20px 0 0;
+    width: 200px;
+}
+
+.pro-desc, .pro-desc1, .pro-desc2, .pro-desc3 {
+    padding: 10px 25px;
+}
+
+@keyframes slide-right {
+    0%{transform: translateX(-900px); opacity: 0%;}
+    100%{transform: translateX(0px); opacity: 100%;}
+}
